@@ -1,0 +1,50 @@
+<html>
+    <head>
+      <meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        
+        <link rel="stylesheet" href="form.css" type="text/css">
+    </head>
+    <body>
+      <div class="row">
+    <div class="col-md-12">
+      <!-- <form action="index.html" method="post"> -->
+        <h1> Incidence Form </h1>
+        
+        <fieldset>
+          
+         
+        
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+        
+          <label for="email">Email:</label>
+          <input type="email" id="mail" name="user_email">
+      
+          <label for="Category Of Incidence">Category Of Incidence:</label>
+          <select id="category" name="Category Of Incidence">
+            <optgroup label="Incidence">
+                <option value="Accident">Accident</option>
+              <option value="Fighting">Fighting</option>
+              <option value="Riot">Riot</option>
+              <option value="fire">fire</option>
+              <option value="others">others</option>
+            </optgroup>
+
+          <input type="text" id="title"  placeholder="Incident title">
+          
+          <textarea id="description" name="user_Description" placeholder="Incident description"></textarea>
+        </fieldset>
+       
+        <button id="submit-incident">Submit</button>
+        
+       <!-- </form> -->
+        </div>
+      </div>
+      <script src="cordova.js"></script>
+        <script src="js/form.js"></script>
+    </body>
+</html>

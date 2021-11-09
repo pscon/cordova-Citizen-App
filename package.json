@@ -1,0 +1,14 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "displayName": "HelloCordova",
+  "dependencies": {},
+  "devDependencies": {
+    "cordova-browser": "~5.0.4"
+  },
+  "cordova": {
+    "platforms": [
+      "browser"
+    ]
+  }
+}
